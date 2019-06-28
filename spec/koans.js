@@ -322,7 +322,7 @@ describe("the JavaScript language", function() {
         return add;
       }
 
-      expect(example()(1,2)).toEqual(3);
+      expect(example()(1, 2)).toEqual(3);
       var f = example();
       expect(f(2, 2)).toEqual(4);
     });
@@ -481,7 +481,6 @@ describe("the JavaScript language", function() {
 
       var obj = new Obj();
       expect(obj.theName()).toBe("bob");
-      
     });
 
     it("may contain 'static' methods", function() {
@@ -527,7 +526,7 @@ describe("the JavaScript language", function() {
       }
 
       var instance = obj();
-      expect(instance.theName()).toBe('bob');
+      expect(instance.theName()).toBe("bob");
       expect(instance.theName).not.toBe(obj().theName);
     });
 
@@ -561,7 +560,7 @@ describe("the JavaScript language", function() {
 
         var child = new Child();
         expect(child.someMethod()).toEqual(10);
-        expect(child.name).toEqual('child');
+        expect(child.name).toEqual("child");
       });
 
       it("may use the functional inheritance", function() {
